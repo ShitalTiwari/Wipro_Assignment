@@ -13,6 +13,10 @@
 		4934185D20F5320000EAA4C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4934185B20F5320000EAA4C8 /* LaunchScreen.storyboard */; };
 		4934186820F5320000EAA4C8 /* Wipro_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934186720F5320000EAA4C8 /* Wipro_AssignmentTests.swift */; };
 		4934187320F5320000EAA4C8 /* Wipro_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934187220F5320000EAA4C8 /* Wipro_AssignmentUITests.swift */; };
+		4934188620F5DB5B00EAA4C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934188320F5DB5B00EAA4C8 /* Constants.swift */; };
+		4934188720F5DB5B00EAA4C8 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934188420F5DB5B00EAA4C8 /* APICall.swift */; };
+		4934188820F5DB5B00EAA4C8 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934188520F5DB5B00EAA4C8 /* CommonMethods.swift */; };
+		4934188B20F5DBF900EAA4C8 /* ImageContainerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934188A20F5DBF900EAA4C8 /* ImageContainerTableViewCell.swift */; };
 		8A40FBDD45FB3639EACDF3E3 /* Pods_Wipro_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832CE956D50B9AE3ECFB7A3D /* Pods_Wipro_Assignment.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +51,10 @@
 		4934187220F5320000EAA4C8 /* Wipro_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wipro_AssignmentUITests.swift; sourceTree = "<group>"; };
 		4934187420F5320000EAA4C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4934188020F537C100EAA4C8 /* Wipro_Assignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Wipro_Assignment-Bridging-Header.h"; sourceTree = "<group>"; };
+		4934188320F5DB5B00EAA4C8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4934188420F5DB5B00EAA4C8 /* APICall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		4934188520F5DB5B00EAA4C8 /* CommonMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		4934188A20F5DBF900EAA4C8 /* ImageContainerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageContainerTableViewCell.swift; sourceTree = "<group>"; };
 		6EE8D853FB594839CC978789 /* Pods-Wipro_Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro_Assignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wipro_Assignment/Pods-Wipro_Assignment.release.xcconfig"; sourceTree = "<group>"; };
 		832CE956D50B9AE3ECFB7A3D /* Pods_Wipro_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wipro_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E750AE7332DD9823D452441A /* Pods-Wipro_Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wipro_Assignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wipro_Assignment/Pods-Wipro_Assignment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,8 +112,10 @@
 		4934185120F531FF00EAA4C8 /* Wipro_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				4934188920F5DB6600EAA4C8 /* ViewModel */,
+				4934188220F5DB3800EAA4C8 /* Model */,
+				4934188120F5DB1200EAA4C8 /* Controller */,
 				4934185220F531FF00EAA4C8 /* AppDelegate.swift */,
-				4934185420F531FF00EAA4C8 /* ViewController.swift */,
 				4934185920F5320000EAA4C8 /* Assets.xcassets */,
 				4934185B20F5320000EAA4C8 /* LaunchScreen.storyboard */,
 				4934185E20F5320000EAA4C8 /* Info.plist */,
@@ -129,6 +139,32 @@
 				4934187420F5320000EAA4C8 /* Info.plist */,
 			);
 			path = Wipro_AssignmentUITests;
+			sourceTree = "<group>";
+		};
+		4934188120F5DB1200EAA4C8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4934185420F531FF00EAA4C8 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4934188220F5DB3800EAA4C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4934188420F5DB5B00EAA4C8 /* APICall.swift */,
+				4934188520F5DB5B00EAA4C8 /* CommonMethods.swift */,
+				4934188320F5DB5B00EAA4C8 /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4934188920F5DB6600EAA4C8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4934188A20F5DBF900EAA4C8 /* ImageContainerTableViewCell.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		87AA6DE1979D37C5F9802D59 /* Frameworks */ = {
@@ -323,6 +359,10 @@
 			files = (
 				4934185520F531FF00EAA4C8 /* ViewController.swift in Sources */,
 				4934185320F531FF00EAA4C8 /* AppDelegate.swift in Sources */,
+				4934188720F5DB5B00EAA4C8 /* APICall.swift in Sources */,
+				4934188B20F5DBF900EAA4C8 /* ImageContainerTableViewCell.swift in Sources */,
+				4934188620F5DB5B00EAA4C8 /* Constants.swift in Sources */,
+				4934188820F5DB5B00EAA4C8 /* CommonMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PJT9583SS;
 				INFOPLIST_FILE = Wipro_Assignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -511,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9PJT9583SS;
 				INFOPLIST_FILE = Wipro_Assignment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
